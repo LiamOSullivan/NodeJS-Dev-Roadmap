@@ -14,5 +14,9 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, hostname, () => {
-  console.log(`Server started at //http:${hostname}:${port}`);
+  const t = new Date();
+  const h = t.getHours();
+  const m = t.getMinutes();
+  console.log(`Server started on //http:${hostname}:${port}`);
+  console.log(`Time: ${h}:${m}`);
 })

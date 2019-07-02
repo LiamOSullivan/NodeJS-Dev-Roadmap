@@ -1,0 +1,24 @@
+{
+  "name": "node-roadmap",
+  "version": "1.0.0",
+  "description": "> Roadmap to becoming a [Node.js](https://nodejs.org/en/) developer in 2019:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiamOSullivan/Nodejs-Developer-Roadmap.git"
+  },
+  "author": "Liam O'Sullivan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiamOSullivan/Nodejs-Developer-Roadmap/issues"
+  },
+  "homepage": "https://github.com/LiamOSullivan/Nodejs-Developer-Roadmap#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
