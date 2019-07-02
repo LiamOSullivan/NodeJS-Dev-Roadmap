@@ -1,3 +1,7 @@
+# Keys
+server.cert
+server.key
+
 # Dependency directories
 node_modules/
 node_modules/*
