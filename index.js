@@ -55,23 +55,23 @@ const options = {
 };
 
 const req = https.request(options, (res) => {
-  console.log("Started request GET");
+  // console.log("Started request GET");
   let resBody = ""; //the resposne is a ***stream***
   let i = 0;
   res.on('data', (chunk) => {
-    console.log(`Chunk ${i} len ${chunk.length}`);
+    // console.log(`Chunk ${i} len ${chunk.length}`);
     resBody += chunk;
     i += 1;
   });
 
   res.on('end', () => {
-    console.log("End request GET res");
+    // console.log("End request GET res");
     fs.writeFile("http-codes.html", resBody, (e) => {
       if (e) {
         console.error("Write file error " + e.message);
         throw e;
       }
-      console.log("File downloaded");
+      // console.log("File downloaded");
     })
   });
 });
